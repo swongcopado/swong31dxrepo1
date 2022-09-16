@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata"
+      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <applicationVisibilities>
         <application>standard__AllTabSet</application>
         <default>false</default>
@@ -1447,6 +1448,11 @@
         <editable>true</editable>
         <field>Customer.TotalLifeTimeValue</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>DXObject__c.DXPicklist__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -3538,6 +3544,9 @@
         <layout>Customer-Customer Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>DXObject__c-DXObject Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>DataUseLegalBasis-Data Use Legal Basis Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3777,6 +3786,7 @@
     <layoutAssignments>
         <layout>WorkThanks-Thanks Layout</layout>
     </layoutAssignments>
+    <loginHours n1:nil="true" />
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>

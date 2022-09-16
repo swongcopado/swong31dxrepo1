@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata"
+      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <applicationVisibilities>
         <application>standard__AllTabSet</application>
         <default>false</default>
@@ -1446,6 +1447,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Customer.TotalLifeTimeValue</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>DXObject__c.DXPicklist__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3538,6 +3544,9 @@
         <layout>Customer-Customer Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>DXObject__c-DXObject Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>DataUseLegalBasis-Data Use Legal Basis Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3777,6 +3786,7 @@
     <layoutAssignments>
         <layout>WorkThanks-Thanks Layout</layout>
     </layoutAssignments>
+    <loginHours n1:nil="true" />
     <loginIpRanges>
         <endAddress>255.255.255.255</endAddress>
         <startAddress>0.0.0.0</startAddress>
@@ -4148,6 +4158,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Customer</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>DXObject__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
